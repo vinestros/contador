@@ -1,0 +1,114 @@
+/* [AI Generated] Data: 01/09/2026 */
+/* Descricao: Tema amoroso responsivo com layout para mobile e desktop */
+/* Gerado por: Cursor AI */
+/* AI_GENERATED_CODE_START */
+:root {
+  --bg-top: #ffdbe7;
+  --bg-bottom: #ffeef4;
+  --card-bg: #ffffffd9;
+  --primary: #d94a7a;
+  --primary-soft: #f8b6cc;
+  --text-main: #5a2740;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(160deg, var(--bg-top), var(--bg-bottom));
+  color: var(--text-main);
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.love-card {
+  position: relative;
+  width: min(92vw, 560px);
+  background: var(--card-bg);
+  border: 2px solid #ffd1df;
+  border-radius: 28px;
+  box-shadow: 0 18px 45px #ce5f8633;
+  padding: 24px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.heart-glow {
+  position: absolute;
+  top: -56px;
+  right: -42px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff9fc1 0%, #ff9fc100 70%);
+  pointer-events: none;
+}
+
+.title {
+  margin: 0 0 18px;
+  color: var(--primary);
+  font-size: clamp(1.45rem, 2.7vw, 2rem);
+  letter-spacing: 0.4px;
+}
+
+.image-frame {
+  position: relative;
+  border-radius: 22px;
+  border: 2px dashed var(--primary-soft);
+  background: #fff7fa;
+  min-height: 250px;
+  overflow: hidden;
+}
+
+#arrivalImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-placeholder {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  font-size: 1rem;
+  color: #aa4f72;
+  font-weight: 600;
+  background: repeating-linear-gradient(
+    -45deg,
+    #ffe8f0,
+    #ffe8f0 14px,
+    #fff3f7 14px,
+    #fff3f7 28px
+  );
+}
+
+.countdown-message {
+  margin: 20px 0 4px;
+  font-size: clamp(1.1rem, 2.3vw, 1.5rem);
+  font-weight: 700;
+  color: #b33866;
+}
+
+@media (max-width: 520px) {
+  .love-card {
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .image-frame {
+    min-height: 210px;
+  }
+}
+/* AI_GENERATED_CODE_END */
